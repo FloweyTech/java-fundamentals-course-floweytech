@@ -1,0 +1,128 @@
+# Fundamentos de Java para Principiantes
+
+## Resumen del Curso
+
+Este curso de aproximadamente una hora de duración fue diseñado por **FloweyTech** para introducir a estudiantes de secundaria al fascinante mundo de la programación con Java.
+A través de ejemplos claros, visuales y cercanos a su día a día, los participantes aprenderán paso a paso los principios esenciales de la **Programación Orientada a Objetos (POO)** y cómo aplicarlos en programas reales.
+
+El aprendizaje se construye mediante lecciones breves y progresivas, combinando teoría sencilla con práctica inmediata en plataformas online.
+El objetivo es que los estudiantes entiendan cómo “piensa” un programador y adquieran las bases necesarias para continuar su formación en el desarrollo de software.
+
+## Objetivo del Curso
+
+Al finalizar el curso, el estudiante será capaz de:
+
+* Comprender los conceptos básicos de la programación estructurada y orientada a objetos.
+* Crear programas simples en Java utilizando variables, estructuras de control y métodos.
+* Modelar pequeños problemas del mundo real mediante clases y objetos.
+* Reconocer la importancia de las buenas prácticas al escribir código.
+
+El enfoque de FloweyTech es aprender haciendo: cada tema teórico se acompaña de un ejercicio guiado que puede ejecutarse y modificarse directamente en el navegador.
+
+## Público Objetivo
+
+El curso está dirigido a estudiantes de 12 a 17 años, curiosos por la tecnología y sin experiencia previa en programación.
+El lenguaje usado es sencillo, los ejemplos son cercanos (basados en situaciones cotidianas), y se evita el uso de tecnicismos innecesarios para mantener el proceso de aprendizaje ameno y accesible.
+
+## Prerrequisitos
+
+No se requiere ningún conocimiento previo de programación ni instalación de software.
+Solo se necesita una computadora con conexión a internet y ganas de experimentar con código.
+
+## Herramientas Necesarias
+
+Todo el contenido se desarrolla en entornos 100 % online y gratuitos, accesibles desde cualquier navegador moderno (Chrome, Firefox, Edge o Safari).
+Durante el curso se utilizan los siguientes editores de código en línea:
+
+* [Replit](https://replit.com/) → para practicar ejemplos interactivos.
+* [JDoodle](https://www.jdoodle.com/) → para ejecutar fragmentos de código breves.
+* [OnlineGDB](https://www.onlinegdb.com/) → para visualizar proyectos orientados a objetos.
+
+Los estudiantes pueden probar, modificar y ejecutar código sin instalar nada en su computadora, lo que permite un aprendizaje ágil y libre de barreras técnicas.
+
+## Repositorio de Código Fuente
+El código fuente completo del curso está disponible en el siguiente repositorio de GitHub:
+* [Repositorio de Fundamentos de Java para Principiantes](https://github.com/FloweyTech/java-fundamentals-course-floweytech.git)
+
+## Módulo 1: Introducción y fundamentos básicos
+
+### **Lección 1:** ¿Qué es Java y la Programación?
+
+* **Descripción:**
+* **Enlace:** [Ver la lección]()
+* **Conclusiones clave:** 
+* **Práctica:** 
+
+### **Lección 2:** Variables y tipos de datos
+
+* **Descripción:**
+* **Enlace:** [Ver la lección]()
+* **Conclusiones clave:**
+* **Práctica:** 
+
+## Módulo 2: Lógica y control de flujo
+
+### **Lección 3:** Operadores y extructuras de control (``if``, ``else``, ``for``, ``while``)
+
+* **Descripción:**
+* **Enlace:** [Ver la lección]()
+* **Conclusiones clave:**
+* **Práctica:** 
+
+### **Lección 4:** Métodos y parametros
+
+* **Descripción:**
+* **Enlace:** [Ver la lección]()
+* **Conclusiones clave:**
+* **Práctica:** 
+
+## Módulo 3: Introducción a Programación Orientada a Objetos (POO)
+
+### **Lección 5:** Clases, objetos y  constructores
+
+* **Descripción:**
+* **Enlace:** [Ver la lección]()
+* **Conclusiones clave:**
+* **Práctica:** 
+
+### **Lección 6:** Encapsulación y métodos (``getters`` y ``setters``)
+
+* **Descripción:**
+* **Enlace:** [Ver la lección]()
+* **Conclusiones clave:**
+* **Práctica:** 
+
+## Módulo 4: Proyecto Final
+
+### **Lección 7:** Programa final (mini proyecto en Java)
+
+* **Descripción:**
+* **Enlace:** [Ver la lección]()
+* **Conclusiones clave:**
+* **Práctica:** 
+
+### **Lección 8:** Mejores prácticas y próximos pasos
+
+* **Descripción:**
+* **Enlace:** [Ver la lección]()
+* **Conclusiones clave:**
+* **Práctica:** 
+
+## Recursos Adicionales
+
+
+## Elaboración
+
+**Universidad Peruana de Ciencias Aplicadas (UPC)** <br>
+**Carrera de Ingeniería de Software** <br>
+**Período 202520**<br>
+**1ASI0729 Desarrollo de Aplicaciones Open Source**<br>
+NRC 7349 <br>
+**Nombre del equipo**: FloweyTech <br>
+**Líder del equipo**: Anjali Amaro Villar <br>
+**Integrantes del equipo**: 
+- Quique Vladimir Jara Benites
+- Gonzalo Samuel Quintanilla Pozo
+- Diego Alejandro Vilca Saboya <br>
+
+**Fecha de entrega**: 15 de noviembre de 2025 
