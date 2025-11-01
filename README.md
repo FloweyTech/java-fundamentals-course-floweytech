@@ -14,7 +14,6 @@ This course introduces secondary school students (ages 12–17) to **programming
 ## 📂 Repository Structure
 - `starter-files/` — Starter code for exercises.
 - `completed-examples/` — Full working examples.
-- `scripts/` — Auxiliary scripts or configs.
 - `course-plan.md` — Official course plan.
 - `README.md` — Presentation file and repository guide.
 
