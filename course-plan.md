@@ -110,6 +110,16 @@ El código fuente completo del curso está disponible en el siguiente repositori
 
 ## Recursos Adicionales
 
+| Nº de Lección | Actividad | Enlace |
+| ------------- |-----------|--------|
+| 1             |           |        |
+| 2             |           |        |
+| 3             |           |        |
+| 4             |           |        |
+| 5             |           |        |
+| 6             |           |        |
+| 7             |           |        |
+
 
 ## Elaboración
 
