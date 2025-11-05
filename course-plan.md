@@ -48,10 +48,36 @@ El código fuente completo del curso está disponible en el siguiente repositori
 
 ### **Lección 1:** ¿Qué es Java y la Programación?
 
-* **Descripción:**
-* **Enlace:** [Ver la lección]()
-* **Conclusiones clave:** 
-* **Práctica:** 
+* **Descripción:**  
+  En esta primera lección, los estudiantes conocerán qué significa programar y cómo Java permite convertir ideas en instrucciones que una computadora puede entender.  
+  A través de ejemplos sencillos y comparaciones cotidianas, se explica que programar es dar pasos ordenados para resolver un problema, y que Java es un lenguaje versátil usado en millones de dispositivos: desde celulares Android hasta sistemas bancarios o videojuegos.  
+  Se muestra el clásico ejemplo “Hola Mundo” como el primer vistazo al código, explicando de forma simple cómo el programa sigue las instrucciones dentro del método principal.  
+  Finalmente, se presenta una pequeña demostración en la que Java realiza una suma básica, anticipando los conceptos que se desarrollarán en la siguiente lección sobre variables y tipos de datos.
+
+* **Enlace:** [Ver la lección](https://youtu.be/JMmJFuvtKEA)
+
+* **Conclusiones clave:**  
+  - Programar es dar instrucciones paso a paso a una computadora.  
+  - Java es un lenguaje multiplataforma, estable y muy usado en el mundo real.  
+  - Todo programa en Java comienza dentro de una estructura llamada `main`.  
+  - Con una sola línea, Java puede mostrar mensajes y realizar operaciones simples.  
+  - En la siguiente lección se aprenderá a guardar información en **variables** para hacer programas más dinámicos.
+
+* **Práctica:**  
+  1. Abre [OnlineGDB]([https://replit.com/~](https://www.onlinegdb.com/)) y crea un nuevo proyecto en **Java**.  
+  2. Copia este código y ejecútalo:
+     ```java
+     public class Main {
+         public static void main(String[] args) {
+             System.out.println("Hola mundo desde FloweyTech!");
+             System.out.println(5 + 3);
+         }
+     }
+     ```
+  3. Cambia los números de la suma o el texto del mensaje para ver cómo el resultado cambia.  
+  4. Observa que todo lo que está dentro de las llaves `{ }` se ejecuta al iniciar el programa.  
+  5. Guarda tu proyecto: este será el punto de partida para la **Lección 2: Variables y tipos de datos**.
+
 
 ### **Lección 2:** Variables y tipos de datos
 
