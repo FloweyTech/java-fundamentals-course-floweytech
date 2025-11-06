@@ -79,12 +79,65 @@ El código fuente completo del curso está disponible en el siguiente repositori
   5. Guarda tu proyecto: este será el punto de partida para la **Lección 2: Variables y tipos de datos**.
 
 
-### **Lección 2:** Variables y tipos de datos
+### **Lección 2:** Variables y Tipos de Datos
 
-* **Descripción:**
-* **Enlace:** [Ver la lección]()
-* **Conclusiones clave:**
-* **Práctica:** 
+* **Descripción:**  
+  En esta segunda lección, los estudiantes aprenden qué son las **variables** y los **tipos de datos** en Java, conceptos fundamentales para crear programas dinámicos.  
+  A través de ejemplos visuales, se explica que una variable es como una **caja con nombre** donde se guarda información que puede cambiar durante la ejecución del programa.  
+  Se presentan los tipos de datos más comunes —**int**, **double**, **String** y **boolean**— junto con ejemplos sencillos que muestran cómo almacenar números, texto y valores verdaderos o falsos.  
+  Finalmente, se desarrolla un pequeño programa que solicita datos al usuario (nombre, edad y número de compañeros), realiza una **suma** y muestra un mensaje personalizado con el resultado.
+
+* **Enlace:** [Ver la lección](https://youtu.be/YulS5Sox-3c)
+
+* **Conclusiones clave:**  
+  - Una variable es un espacio de memoria donde el programa guarda información.  
+  - Cada variable tiene un **nombre** y un **tipo de dato**.  
+  - Los tipos básicos más usados son:  
+    - `int` → números enteros.  
+    - `double` → números con decimales.  
+    - `String` → texto o palabras.  
+    - `boolean` → valores de verdadero o falso.  
+  - Las variables permiten que los programas **recuerden, calculen y combinen información**.  
+  - Con el objeto **Scanner** podemos pedir datos al usuario e interactuar con ellos.  
+
+* **Práctica:**  
+  1. Crea un nuevo proyecto en [GDB](https://www.onlinegdb.com/) usando **Java**.  
+  2. Copia el siguiente código y ejecútalo:
+     ```java
+     import java.util.Scanner;  // Permite leer datos del teclado
+
+     public class Main {
+         public static void main(String[] args) {
+             Scanner input = new Scanner(System.in); // Crea el lector de entrada
+
+             System.out.println("¿Cuál es tu nombre?");
+             String nombre = input.nextLine();
+
+             System.out.println("¿Cuántos años tienes?");
+             int edad = input.nextInt();
+
+             System.out.println("¿Cuántos compañeros varones hay en tu salón?");
+             int varones = input.nextInt();
+
+             System.out.println("¿Cuántas compañeras mujeres hay?");
+             int mujeres = input.nextInt();
+
+             int total = varones + mujeres; // Calcula el total de compañeros
+
+             System.out.println("\n----------------------------");
+             System.out.println(nombre + " tiene " + edad + " años y " + total + " compañeros de clase.");
+             System.out.println("----------------------------");
+         }
+     }
+     ```
+  3. Ejecuta el programa y responde a las preguntas en consola.  
+  4. Observa cómo el programa **usa tus respuestas** para generar el mensaje final.  
+  5. Cambia los nombres de las variables o los textos para experimentar.  
+
+---
+
+💡 *En la siguiente lección, aprenderás cómo usar estructuras de control como `if`, `else`, `for` y `while` para que tu programa pueda tomar decisiones y repetir acciones.*
+
 
 ## Módulo 2: Lógica y control de flujo
 
