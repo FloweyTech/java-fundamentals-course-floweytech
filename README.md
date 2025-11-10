@@ -1,37 +1,38 @@
-# Java Fundamentals Course – FloweyTech
+# Curso de Fundamentos de Java – FloweyTech
 
-Welcome to the **Java Fundamentals Course**, an interactive and beginner-friendly learning path created by **FloweyTech** as part of the *1ASI0729 - Desarrollo de Aplicaciones Open Source* course at the **Universidad Peruana de Ciencias Aplicadas (UPC)**.
+Bienvenido al **Curso de Fundamentos de Java**, un curso interactivo y amigable para principiantes creado por **FloweyTech** como parte del curso *1ASI0729 - Desarrollo de Aplicaciones Open Source* en la **Universidad Peruana de Ciencias Aplicadas (UPC)**.
 
-## 🎯 Objective
-This course introduces secondary school students (ages 12–17) to **programming with Java** through short, engaging video lessons and hands-on exercises — all accessible **online**, without any software installation.
+## 🎯 Objetivo
+Este curso introduce a estudiantes de secundaria (de 12 a 17 años) a la **programación con Java** a través de lecciones en video cortas y atractivas, junto con ejercicios prácticos — todo accesible **en línea**, sin necesidad de instalar ningún software.
 
-## 📚 Course Overview
-- Duration: ~60 minutes (divided into 8 short videos)
-- Topics: Variables, control structures, methods, classes, objects, and basic OOP.
-- Tools: [Replit](https://replit.com), [JDoodle](https://www.jdoodle.com/), [OnlineGDB](https://www.onlinegdb.com/)
-- Target audience: Students with no prior programming experience.
+## 📚 Resumen del Curso
+- **Duración:** ~60 minutos (dividido en 8 videos cortos)
+- **Temas:** Variables, estructuras de control, métodos, clases, objetos y POO básica
+- **Herramientas:** [Replit](https://replit.com), [JDoodle](https://www.jdoodle.com/), [OnlineGDB](https://www.onlinegdb.com/)
+- **Público objetivo:** Estudiantes sin experiencia previa en programación
 
-## 📂 Repository Structure
-- `starter-files/` — Starter code for exercises.
-- `completed-examples/` — Full working examples.
-- `course-plan.md` — Official course plan.
-- `README.md` — Presentation file and repository guide.
+## 📂 Estructura del Repositorio
+- `starter-files/` → Código inicial para ejercicios
+- `completed-examples/` → Ejemplos completos y funcionales
+- `scripts/` → Scripts auxiliares o configuraciones
+- `course-plan.md` → Plan oficial del curso (formato Markdown)
+- `README.md` → Este archivo de presentación
 
 
-## 🌐 Online Resources
-- 📺 Course Playlist (YouTube – unlisted): *to be added*
-- 💻 Practice Links: Included in each lesson
-- 🧠 GitHub Repository: https://github.com/FloweyTech/java-fundamentals-course-floweytech
+## 🌐 Recursos en Línea
+- 📺 **Lista de reproducción del curso (YouTube – no listado):** *por añadir*
+- 💻 **Enlaces de práctica:** Incluidos en cada lección
+- 🧠 **Repositorio GitHub:** https://github.com/FloweyTech/java-fundamentals-course-floweytech
 
-## 👥 Team FloweyTech
-- **Team Leader:** Anjali Amaro Villar 
-- **Members:** 
+## 👥 Equipo FloweyTech
+- **Líder de Equipo:** Anjali Amaro Villar 
+- **Miembros:** 
   - Quique Vladimir Jara Benites
   - Gonzalo Samuel Quintanilla Pozo
   - Diego Alejandro Vilca Saboya
-- **Period:** 202520
-- **Course:** 1ASI0729 – Desarrollo de Aplicaciones Open Source
+- **Período:** 202520
+- **Curso:** 1ASI0729 – Desarrollo de Aplicaciones Open Source
 
 ---
 
-*Created by FloweyTech – Inspiring the next generation of coders.*
+*Creado por FloweyTech – Inspirando a la próxima generación de programadores.*
