@@ -64,7 +64,7 @@ El código fuente completo del curso está disponible en el siguiente repositori
   - En la siguiente lección se aprenderá a guardar información en **variables** para hacer programas más dinámicos.
 
 * **Práctica:**  
-  1. Abre [OnlineGDB]([https://replit.com/~](https://www.onlinegdb.com/)) y crea un nuevo proyecto en **Java**.  
+  1. Abre [OnlineGDB](https://www.onlinegdb.com/) y crea un nuevo proyecto en **Java**.  
   2. Copia este código y ejecútalo:
      ```java
      public class Main {
@@ -144,20 +144,118 @@ El código fuente completo del curso está disponible en el siguiente repositori
 ### **Lección 3:** Operadores y extructuras de control (``if``, ``else``, ``for``, ``while``)
 
 * **Descripción:**
-* **Enlace:** [Ver la lección]()
+  Esta lección es fundamental para dotar al programa de inteligencia y la capacidad de repetir tareas, utilizando los conceptos de programación estructurada. Se inicia explicando 
+  los Operadores, tanto Aritméticos (como el Módulo ``%``) como los Lógicos/de Comparación (``>``, ``==``), que son la base para crear las condiciones que el programa debe evaluar. Luego, se 
+  introduce la estructura ``if-else`` para que el programa pueda tomar Decisiones, siguiendo un camino si una condición es Verdadera y otro si es Falsa. Finalmente, se explican los Bucles: 
+  el bucle ``for`` (para repeticiones con un número fijo de vueltas) y el bucle ``while`` (para repeticiones que se mantienen mientras una condición sea Verdadera). El enfoque es simple: mostrar 
+  cómo el programa "piensa" y cómo se evita escribir código repetitivo.
+
+
+* **Enlace:** [Ver la lección](https://www.youtube.com/watch?v=8qf55AN8XU8)
 * **Conclusiones clave:**
+  
+  - Los Operadores Aritméticos realizan cálculos; los Operadores Lógicos (``>``, ``==``) formulan preguntas de Verdadero/Falso.
+
+  - La estructura ``if-else`` permite al código tomar decisiones y seguir rutas lógicas.
+
+  - El bucle ``for`` se usa para repetir acciones un número de veces conocido.
+
+  - El bucle ``while`` se usa para repetir acciones mientras una condición específica se cumpla.
+
+  - Las estructuras de control son la base de la lógica para que un programa sea dinámico.
+
 * **Práctica:** 
+
+  1. Abre [JDoodle](https://www.jdoodle.com/online-java-compiler) y crea un nuevo proyecto en Java. Copia y ejecuta el siguiente código:
+  
+        ```java
+        public class MyCode {
+            public static void main(String[] args) {
+                int hora = 14;
+                int bateria = 3;
+                      
+                if (hora < 12) {
+                    System.out.println("¡Buenos días!");
+                } else {
+                    System.out.println("¡Buenas tardes!");
+                }
+                    
+                System.out.println("--- Alarma ---");
+                for (int i = 0; i < 3; i++) {
+                    System.out.println("Repetición: " + (i + 1));
+                }
+        
+                while (bateria > 0) {
+                    System.out.println("Batería: " + bateria + "%");
+                    bateria = bateria - 1; 
+                }
+            }
+        }
+        ```
+  2. Cambia el valor de ``hora`` a 9 y observa cómo cambia el resultado del ``if-else``.
+  3. Cambia el número de repeticiones en el ``for`` (por ejemplo, ``i < 5``).
+
+---
+💡 *En la siguiente lección, aprenderás a usar Métodos para que tu código sea aún más limpio y organizado, utilizando funciones reutilizables.*
 
 ### **Lección 4:** Métodos y parametros
 
 * **Descripción:**
-* **Enlace:** [Ver la lección]()
+  Esta lección introduce la noción de modularidad en la programación, explicando cómo los Métodos (o funciones) permiten agrupar bloques de código
+  para realizar una tarea específica. Esta es una excelente práctica para la reutilización del código. Se define qué son los Parámetros (datos de 
+  entrada) y cómo se usan para hacer que un método sea flexible (por ejemplo, el método ``saludar`` funciona para cualquier nombre que se le pase). 
+  Finalmente, se explica el concepto de Retorno, demostrando cómo un método puede calcular un valor y entregárselo de vuelta al programa principal.
+  Los ejemplos se enfocan en la creación de funciones reutilizables que simplifican el código principal.
+
+* **Enlace:** [Ver la lección](https://www.youtube.com/watch?v=nPyWHS-9HqM&t=12s)
 * **Conclusiones clave:**
+
+  - Un Método es un bloque de código reutilizable que ayuda a mantener el programa organizado.
+
+  - Los Parámetros son los datos que el método necesita para funcionar y van entre paréntesis.
+
+  - ``void`` significa que el método solo ejecuta acciones, pero no devuelve un valor.
+
+  - El Retorno (usando la palabra ``return``) permite que un método entregue un resultado calculado al resto del programa, creando una función reutilizable.
+
+  - Los métodos son la base para construir las Clases y Objetos en POO.
 * **Práctica:** 
+
+  1. Abre [JDoodle](https://www.jdoodle.com/online-java-compiler) y crea un nuevo proyecto en Java. Copia y ejecuta el siguiente código:
+
+        ```java
+        public class MyCode {
+
+            public static void imprimir(String texto) {
+                System.out.println("--- " + texto + " ---");
+            }
+
+            public static int sumarDiez(int numero) {
+                int resultado = numero + 10;
+                return resultado;
+            }
+
+            public static void main(String[] args) {
+                imprimir("INICIO DEL PROGRAMA");
+
+                int miNumero = 5;
+                int total = sumarDiez(miNumero);
+        
+                System.out.println("5 + 10 es: " + total); 
+        
+                imprimir("FIN DEL PROGRAMA");
+            }
+        }
+        ```
+    2. Cambia el número ``5`` en ``sumarDiez(5)`` a otro valor y observa cómo cambia la variable ``total``.     
+    3. Intenta llamar al método ``imprimir()`` con un texto diferente.
+
+ ---
+💡 *La siguiente lección nos llevará a la Programación Orientada a Objetos, donde usaremos los métodos para dar comportamiento a las Clases y Objetos.*
 
 ## Módulo 3: Introducción a Programación Orientada a Objetos (POO)
 
-### **Lección 5:** Clases, objetos y  constructores
+### **Lección 5:** Clases, objetos y constructores
 
 * **Descripción:**
 * **Enlace:** [Ver la lección]()
@@ -189,15 +287,16 @@ El código fuente completo del curso está disponible en el siguiente repositori
 
 ## Recursos Adicionales
 
-| Nº de Lección | Actividad | Enlace |
-| ------------- |-----------|--------|
-| 1             |           |        |
-| 2             |           |        |
-| 3             |           |        |
-| 4             |           |        |
-| 5             |           |        |
-| 6             |           |        |
-| 7             |           |        |
+| Nº de Lección | Actividad                           | Enlace                                                                    |
+|---------------|-------------------------------------|---------------------------------------------------------------------------|
+| 1             | ¿Qué es Java y la Programación?     | [Abrir OnlineGDB Hola Mundo](https://www.onlinegdb.com/)                  |
+| 2             | Variables y Tipos de Datos          | [Abrir OnlineGDB Scanner](https://www.onlinegdb.com/)                     |
+| 3             | Operadores y extructuras de control | [Abrir JDoodle Estructuras](https://www.jdoodle.com/online-java-compiler) |
+| 4             | Métodos y parametros                | [Abrir JDoodle Funciones](https://www.jdoodle.com/online-java-compiler)                                                 |
+| 5             | Clases, objetos y constructores     |                                                                           |
+| 6             | Encapsulación y métodos             |                                                                           |
+| 7             | Programa final                      |                                                                           |
+| 8             | Mejores prácticas y próximos pasos  |                                                                           |
 
 
 ## Elaboración
