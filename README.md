@@ -12,9 +12,7 @@ Este curso introduce a estudiantes de secundaria (de 12 a 17 años) a la **progr
 - **Público objetivo:** Estudiantes sin experiencia previa en programación
 
 ## 📂 Estructura del Repositorio
-- `starter-files/` → Código inicial para ejercicios
 - `completed-examples/` → Ejemplos completos y funcionales
-- `scripts/` → Scripts auxiliares o configuraciones
 - `course-plan.md` → Plan oficial del curso (formato Markdown)
 - `README.md` → Este archivo de presentación
 
