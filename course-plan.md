@@ -258,16 +258,145 @@ El código fuente completo del curso está disponible en el siguiente repositori
 ### **Lección 5:** Clases, objetos y constructores
 
 * **Descripción:**
-* **Enlace:** [Ver la lección]()
-* **Conclusiones clave:**
+  Introducción a la Programación Orientada a Objetos (POO) en Java, explicando qué son las clases y los objetos usando ejemplos del mundo real. Se crea una clase simple Estudiante con atributos, constructor y un método.  
+* **Enlace:** [Ver la lección](https://youtu.be/-gOkco98jZU)  
+* **Conclusiones clave:**  
+  * Una clase es una plantilla o molde que describe las características y comportamientos de algo (por ejemplo, un estudiante).  
+  * Un objeto es una instancia de una clase: cada objeto tiene sus propios valores para los atributos.  
+  * Un constructor es un método especial que se usa para crear objetos e inicializar sus atributos.  
+  * Los métodos permiten que los objetos realicen acciones (como presentarse).  
 * **Práctica:** 
+Abre [OnlineGDB](https://www.onlinegdb.com/) y selecciona en la parte de la derecha el lenguaje Java, luego crea un nuevo archivo llamado Estudiante.Java y coloca el siguiente código  
+ ```Java
+// Clase Estudiante
+public class Estudiante {
+    String nombre;
+    int edad;
+    double promedio;
+
+    // Constructor
+    Estudiante(String n, int e, double p) {
+        nombre = n;
+        edad = e;
+        promedio = p;
+    }
+
+    // Método
+    void presentarse() {
+        System.out.println("Hola, soy " + nombre + ", tengo " + edad + " años.");
+        System.out.println("Mi promedio es: " + promedio);
+    }
+}
+
+```
+ Luego en la clase Main, coloca lo siguiente  
+
+ ```Java
+ // Clase Main para probar Estudiante
+public class Main {
+    public static void main(String[] args) {
+        Estudiante estudiante1 = new Estudiante("Ana", 15, 17.5);
+        Estudiante estudiante2 = new Estudiante("Luis", 16, 18.2);
+
+        estudiante1.presentarse();
+        estudiante2.presentarse();
+    }
+}
+
+ ```
 
 ### **Lección 6:** Encapsulación y métodos (``getters`` y ``setters``)
 
-* **Descripción:**
-* **Enlace:** [Ver la lección]()
-* **Conclusiones clave:**
+* **Descripción:** Se introduce el concepto de encapsulación para proteger los datos de una clase. Se modifican los atributos de Estudiante a private y se añaden métodos getters y setters para acceder y modificar los datos de forma controlada.
+* **Enlace:** [Ver la lección](https://youtu.be/BYYhNhY-Lbg)
+* **Conclusiones clave:**  
+  * La encapsulación consiste en proteger los datos de una clase, evitando que se modifiquen directamente desde fuera.
+
+  * La palabra clave private hace que un atributo solo pueda ser accedido dentro de la misma clase.
+
+  * Los getters permiten leer el valor de un atributo de manera segura.
+
+  * Los setters permiten cambiar el valor de un atributo, aplicando validaciones si es necesario (por ejemplo, no permitir edades negativas).
+
+  * Encapsular mejora la seguridad y la organización del código, especialmente en proyectos grandes.
 * **Práctica:** 
+En la clase Estudiante, actualiza con el siguiente código
+ ```Java
+// Clase Estudiante con encapsulación
+public class Estudiante {
+    private String nombre;
+    private int edad;
+    private double promedio;
+
+    // Constructor
+    Estudiante(String n, int e, double p) {
+        nombre = n;
+        edad = e;
+        promedio = p;
+    }
+
+    // Getters
+    public String getNombre() {
+        return nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public double getPromedio() {
+        return promedio;
+    }
+
+    // Setters
+    public void setNombre(String nuevoNombre) {
+        nombre = nuevoNombre;
+    }
+
+    public void setEdad(int nuevaEdad) {
+        if (nuevaEdad >= 0) {
+            edad = nuevaEdad;
+        }
+    }
+
+    public void setPromedio(double nuevoPromedio) {
+        if (nuevoPromedio >= 0 && nuevoPromedio <= 20) {
+            promedio = nuevoPromedio;
+        }
+    }
+
+    // (Opcional) Método de presentación
+    public void presentarse() {
+        System.out.println("Hola, soy " + nombre + ", tengo " + edad + " años.");
+        System.out.println("Mi promedio es: " + promedio);
+    }
+}
+
+
+ ```
+Ahora actualiza la clase Main  
+```Java
+// Clase Main para probar getters y setters
+public class Main {
+    public static void main(String[] args) {
+        Estudiante estudiante = new Estudiante("Ana", 15, 17.5);
+
+        // Modificar datos usando setters
+        estudiante.setEdad(16);
+        estudiante.setPromedio(18.0);
+
+        // Leer datos usando getters
+        System.out.println("Nombre: " + estudiante.getNombre());
+        System.out.println("Edad: " + estudiante.getEdad());
+        System.out.println("Promedio: " + estudiante.getPromedio());
+
+        // (Opcional) llamar al método presentarse
+        estudiante.presentarse();
+    }
+}
+
+```
+
 
 ## Módulo 4: Proyecto Final
 
@@ -291,10 +420,10 @@ El código fuente completo del curso está disponible en el siguiente repositori
 |---------------|-------------------------------------|---------------------------------------------------------------------------|
 | 1             | ¿Qué es Java y la Programación?     | [Abrir OnlineGDB Hola Mundo](https://www.onlinegdb.com/)                  |
 | 2             | Variables y Tipos de Datos          | [Abrir OnlineGDB Scanner](https://www.onlinegdb.com/)                     |
-| 3             | Operadores y extructuras de control | [Abrir JDoodle Estructuras](https://www.jdoodle.com/online-java-compiler) |
-| 4             | Métodos y parametros                | [Abrir JDoodle Funciones](https://www.jdoodle.com/online-java-compiler)                                                 |
-| 5             | Clases, objetos y constructores     |                                                                           |
-| 6             | Encapsulación y métodos             |                                                                           |
+| 3             | Operadores y extructuras de control | [Abrir JDoodle Estructuras](https://www.jdoodle.com/online-java-compiler) | 
+| 4             | Métodos y parametros                | [Abrir JDoodle Funciones](https://www.jdoodle.com/online-java-compiler)   |
+| 5             | Clases, objetos y constructores     | [Abrir OnlineGDB Introducción a POO](https://onlinegdb.com/cfCbsQJ3Yw)    |
+| 6             | Encapsulación y métodos             | [Abrir OnlineGDB Encapsulación](https://onlinegdb.com/amlAnJeRdz)         |
 | 7             | Programa final                      |                                                                           |
 | 8             | Mejores prácticas y próximos pasos  |                                                                           |
 
