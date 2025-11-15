@@ -402,30 +402,178 @@ public class Main {
 
 ### **Lección 7:** Programa final (mini proyecto en Java)
 
-* **Descripción:**
-* **Enlace:** [Ver la lección]()
-* **Conclusiones clave:**
-* **Práctica:** 
+**Descripción:** En esta lección, los estudiantes desarrollarán un proyecto completo en Java, aplicando los conceptos vistos en todo el curso: clases, objetos, métodos, getters/setters y lectura de datos.
+  El mini proyecto se titula “Registro de Estudiantes”, donde podrán:
 
+  * Agregar estudiantes
+  * Listar estudiantes
+  * Buscar estudiantes por nombre
+
+Este ejercicio les permite crear un programa real usando Programación Orientada a Objetos.
+
+**Enlace:** [Ver la lección](https://youtu.be/YSCQAqwQtk8)
+
+**Conclusiones clave:**
+
+  * Un proyecto real en Java combina varias clases que trabajan juntas.
+  * La POO organiza mejor el código y permite representar cosas del mundo real.
+  * Una lista (`ArrayList`) permite almacenar múltiples objetos.
+  * La interacción por consola permite al usuario navegar por un menú sencillo.
+  * Aplicar todo lo aprendido refuerza el entendimiento de Java como lenguaje.
+
+**Práctica: Mini proyecto “Registro de Estudiantes”** 
+
+1. Crea dos archivos en Replit:
+
+    - `Estudiante.java`
+    
+    - `Main.java`
+    - 
+2. Copia el siguiente código en cada archivo:
+
+**Estudiante.java**
+
+```Java
+public class Estudiante {
+    private String nombre;
+    private int edad;
+    private double promedio;
+
+    public Estudiante(String nombre, int edad, double promedio) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.promedio = promedio;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void mostrarInfo() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+        System.out.println("Promedio: " + promedio);
+        System.out.println("------------------------------");
+    }
+}
+
+````
+
+**Main.java**
+
+```Java
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        ArrayList<Estudiante> lista = new ArrayList<>();
+
+        int opcion = 0;
+
+        while (opcion != 4) {
+            System.out.println("\n=== REGISTRO DE ESTUDIANTES ===");
+            System.out.println("1. Agregar estudiante");
+            System.out.println("2. Mostrar todos");
+            System.out.println("3. Buscar por nombre");
+            System.out.println("4. Salir");
+            System.out.print("Elige una opción: ");
+            opcion = input.nextInt();
+            input.nextLine();  
+
+            if (opcion == 1) {
+                System.out.print("Nombre: ");
+                String nombre = input.nextLine();
+
+                System.out.print("Edad: ");
+                int edad = input.nextInt();
+
+                System.out.print("Promedio: ");
+                double prom = input.nextDouble();
+                input.nextLine();
+
+                Estudiante e = new Estudiante(nombre, edad, prom);
+                lista.add(e);
+
+                System.out.println("Estudiante agregado correctamente!");
+
+            } else if (opcion == 2) {
+                if (lista.isEmpty()) {
+                    System.out.println("No hay estudiantes registrados.");
+                } else {
+                    for (Estudiante e : lista) {
+                        e.mostrarInfo();
+                    }
+                }
+
+            } else if (opcion == 3) {
+                System.out.print("Ingresa el nombre a buscar: ");
+                String buscar = input.nextLine();
+
+                boolean encontrado = false;
+
+                for (Estudiante e : lista) {
+                    if (e.getNombre().equalsIgnoreCase(buscar)) {
+                        e.mostrarInfo();
+                        encontrado = true;
+                    }
+                }
+
+                if (!encontrado) {
+                    System.out.println("No se encontró ese nombre.");
+                }
+            }
+        }
+
+        System.out.println("¡Fin del programa!");
+    }
+}
+
+````
 ### **Lección 8:** Mejores prácticas y próximos pasos
 
-* **Descripción:**
-* **Enlace:** [Ver la lección]()
-* **Conclusiones clave:**
-* **Práctica:** 
+**Descripción:** Esta última lección brinda consejos esenciales para escribir código más limpio y profesional, además de motivar a los estudiantes a seguir aprendiendo programación.
+  Se mencionan errores comunes, cómo depurarlos, y sugerencias para continuar practicando Java.
+
+**Enlace:** [Ver la lección](https://youtu.be/pUdu7chmEds)
+
+**Conclusiones clave:**
+
+* Escribir código limpio facilita entender y mantener los programas.
+* Divide tu lógica en métodos y clases para evitar repetir código.
+* Usa nombres claros y significativos para variables y funciones.
+* Comenta partes importantes del código.
+* Equivocarte es parte fundamental de aprender a programar.
+* Los proyectos pequeños son la mejor forma de mejorar habilidades.
+
+**Práctica:** Los estudiantes deberán:
+
+1. Revisar su proyecto final e implementar 3 mejoras, como:
+
+* Agregar getters y setters.
+* Validar datos (ej. evitar promedios negativos o mayores a 20).
+* Crear un nuevo método (por ejemplo, determinar si el estudiante está aprobado).
+* Añadir una opción al menú (ej. eliminar estudiante o editar datos).
+
+2. Subir su versión final a Replit.
+
+3. Reflexionar brevemente por escrito:
+
+* ¿Qué fue lo más difícil?
+* ¿Qué fue lo que más te gustó de crear tu primer proyecto en Java?
 
 ## Recursos Adicionales
 
-| Nº de Lección | Actividad                           | Enlace                                                                    |
-|---------------|-------------------------------------|---------------------------------------------------------------------------|
-| 1             | ¿Qué es Java y la Programación?     | [Abrir OnlineGDB Hola Mundo](https://www.onlinegdb.com/)                  |
-| 2             | Variables y Tipos de Datos          | [Abrir OnlineGDB Scanner](https://www.onlinegdb.com/)                     |
-| 3             | Operadores y extructuras de control | [Abrir JDoodle Estructuras](https://www.jdoodle.com/online-java-compiler) | 
-| 4             | Métodos y parametros                | [Abrir JDoodle Funciones](https://www.jdoodle.com/online-java-compiler)   |
-| 5             | Clases, objetos y constructores     | [Abrir OnlineGDB Introducción a POO](https://onlinegdb.com/cfCbsQJ3Yw)    |
-| 6             | Encapsulación y métodos             | [Abrir OnlineGDB Encapsulación](https://onlinegdb.com/amlAnJeRdz)         |
-| 7             | Programa final                      |                                                                           |
-| 8             | Mejores prácticas y próximos pasos  |                                                                           |
+| Nº de Lección | Actividad                           | Enlace                                                                       |
+|---------------|-------------------------------------|------------------------------------------------------------------------------|
+| 1             | ¿Qué es Java y la Programación?     | [Abrir OnlineGDB Hola Mundo](https://www.onlinegdb.com/)                     |
+| 2             | Variables y Tipos de Datos          | [Abrir OnlineGDB Scanner](https://www.onlinegdb.com/)                        |
+| 3             | Operadores y extructuras de control | [Abrir JDoodle Estructuras](https://www.jdoodle.com/online-java-compiler)    | 
+| 4             | Métodos y parametros                | [Abrir JDoodle Funciones](https://www.jdoodle.com/online-java-compiler)      |
+| 5             | Clases, objetos y constructores     | [Abrir OnlineGDB Introducción a POO](https://onlinegdb.com/cfCbsQJ3Yw)       |
+| 6             | Encapsulación y métodos             | [Abrir OnlineGDB Encapsulación](https://onlinegdb.com/amlAnJeRdz)            |
+| 7             | Programa final                      | [Abrir JDoodle Proyecto Final](https://www.jdoodle.com/online-java-compiler) |
 
 
 ## Elaboración
